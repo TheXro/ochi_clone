@@ -4,7 +4,7 @@ import { MdOutlineArrowOutward } from "react-icons/md";
 function LandingPage() {
   return (
     <div className='w-full h-screen bg-zinc-900 pt-1'>
-      <div className='text-structure mt-60 px-20'>
+      <div className='text-structure mt-[12vw] px-[4vw]'>
         {["we create", "Eye-opening", "Presentaions"].map((item, index) => {
           return (
             <div className='masker'>
@@ -25,7 +25,7 @@ function LandingPage() {
           );
         })}
       </div>
-      <div className='border-t-2 border-zinc-700 mt-20 flex justify-between items-center py-5 px-20 '>
+      <div className='border-t-2 border-zinc-700 mt-[8vh] flex justify-between items-center py-5 px-20 '>
         {[
           "For public and private companies",
           "From the first pitch to IPO",
