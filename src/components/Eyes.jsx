@@ -10,13 +10,13 @@ const Eyes = () => {
 
   // for the black part
 
-  const eyeOffsetX = mouseX / 30;
-  const eyeOffsetY = mouseY / 30;
+  const eyeOffsetX = mouseX / 35;
+  const eyeOffsetY = mouseY / 35;
   // console.log(eyeOffsetX, eyeOffsetY)
 
   const styleLeft = {
     transform: `translate(${eyeOffsetX}px, ${eyeOffsetY}px)`,
-    transition: `all .3s ease`,
+    transition: `all .15s ease`,
   };
 
   const angleLeftEyeC = angleLeftEye - 180;
@@ -32,7 +32,7 @@ const Eyes = () => {
 
   const styleRight = {
     transform: `translate(${eyeOffsetX}px, ${eyeOffsetY}px)`,
-    transition: `all .3s ease`,
+    transition: `all .15s ease`,
   };
 
   const angleRightEyeC = angleRightEye - 180;
@@ -56,25 +56,25 @@ const Eyes = () => {
                 id='left-eye'
                 className='line ease-ease transition-all duration-100 flex  w-full h-10'
               >
-                <div className='w-6 h-6 rounded-full bg-zinc-100 ease-ease'></div>
+                <div className='w-[2vw] h-[2vw] ml-[1vw] rounded-full bg-zinc-100 ease'></div>
               </div>
-              <div className='absolute text-2xl'>PLAY</div>
+              {/* <div className='absolute text-2xl opacity-25'>PLAY</div> */}
             </div>
           </div>
           <div className='w-[13vw] h-[13vw] rounded-full bg-white flex justify-center items-center'>
             <div
               style={styleRight}
               id='right'
-              className='w-2/3 relative h-2/3 rounded-full bg-zinc-800 flex justify-center items-center '
+              className='w-[9vw] relative h-[9vw] rounded-full bg-zinc-800 flex justify-center items-center '
             >
               <div
                 style={styleRightEye}
                 id='Right-eye'
                 className='line ease-ease duration-100 flex  w-full h-10'
               >
-                <div className='w-6 h-6 rounded-full bg-zinc-100 ease-ease'></div>
+                <div className='w-[2vw] h-[2vw] ml-[1vw] rounded-full bg-zinc-100 ease'></div>
               </div>
-                <div className='absolute text-2xl'>PLAY</div>
+                {/* <div className='absolute text-2xl'>PLAY</div> */}
             </div>
           </div>
         </div>
